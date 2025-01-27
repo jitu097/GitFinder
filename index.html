@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search GitHub Profile</h1>
+        
+        <!-- Search Section -->
+        <div class="search">
+            <input 
+                type="text" 
+                id="searchInput"
+                name="searchInput"
+                placeholder="Enter Your GitHub Username"
+            />
+            <button class="primary-btn" id="search-btn">Search</button>
+        </div>
+        
+        <!-- Profile Box -->
+        <div class="profile-box" id="profileBox" style="display: none;">
+            <div class="top-section">
+                <div class="left">
+                    <div class="avatar">
+                        <img
+                            alt="avatar"  
+                            id="avatar"
+                            src=""
+                        />
+                    </div>
+                    <div class="self">
+                        <h1 id="name">Name</h1>
+                        <h2 id="username">@username</h2>
+                    </div>
+                </div>
+                <button class="primary-btn" id="checkProfile-btn">Check Profile</button>
+            </div>
+            <div class="about">
+                <h2>About</h2>
+                <p id="bio">Bio goes here.</p>
+            </div>
+            <div class="status">
+                <div class="status-item">
+                    <h3>Followers</h3>
+                    <p id="followers">0</p>
+                </div>
+                <div class="status-item">
+                    <h3>Following</h3>
+                    <p id="following">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signature -->
+    <div class="signature">GitHub Profile Search App by Kushal Priya</div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

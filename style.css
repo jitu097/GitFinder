@@ -1,0 +1,219 @@
+/* Reset and Box Sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+html,
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(https://kinsta.com/wp-content/uploads/2020/01/git-vs-github.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+   
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem; 
+    width: 90%;
+    max-width: 600px;
+    background:rgb(14, 12, 12);
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+/* Heading */
+.container h1 {
+    color: rgb(243, 240, 240);
+    font-size: 3rem;
+    margin-bottom: 2rem; 
+    text-align: center;
+}
+
+/* Search Section */
+.search {
+    display: flex;
+    width: 100%;
+    gap: 1rem; 
+}
+
+.search input{
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    width: 70%;
+    font-size: 1.6rem;
+}
+
+.search input:focus-visible{
+    outline:1px solid rgb(205, 225, 75);
+}
+
+.primary-btn{
+    background: purple;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background 0.3s ease;
+}
+
+.primary-btn:hover{
+    background: rgb(57, 2, 57);
+}
+
+.primary-btn:active{
+    background: rgb(230, 73, 230);
+}
+
+/* Profile Box */
+.profile-box {
+    padding: 4rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background: rgba(44, 62, 80, 0.9); 
+    border-radius: 15px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 2rem; 
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    gap: 1.5rem; 
+}
+
+/* Left Section (Avatar and Self) */
+.left {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
+/* Avatar Styling */
+.avatar {
+    height: 10rem;
+    width: 10rem;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #ffffff; 
+}
+
+/* Self Information */
+.self h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #ecf0f1; 
+}
+
+.self h2 {
+    font-size: 1.6rem;
+    color: #bdc3c7; 
+}
+
+/* Check Profile Button */
+#checkProfile-btn {
+    background: #e74c3c; 
+    padding: 0.8rem 2rem;
+    font-size: 1.6rem;
+}
+
+.primary-btn {
+    background: #3498db; 
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #2980b9; 
+}
+
+.primary-btn:active {
+    background: #1abc9c; 
+}
+
+/* About Section */
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ecf0f1; 
+}
+
+.about p {
+    font-size: 1.6rem;
+    color: #bdc3c7;
+}
+
+/* Status Section */
+.status {
+    display: flex;
+    justify-content: center;
+    gap: 4rem; 
+    width: 100%;
+}
+
+.status-item {
+    text-align: center;
+}
+
+.status-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+}
+
+.status-item p {
+    font-size: 1.6rem;
+    color: #bdc3c7;
+}
+
+/* Signature Styling */
+.signature {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.7;
+    font-family: 'Oswald', sans-serif;
+}
